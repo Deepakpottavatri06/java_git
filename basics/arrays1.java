@@ -33,7 +33,7 @@ public class arrays1{
         Collections.sort(numbers);
         System.out.println(numbers);
 
-        Integer Arr [] = numbers.toArray(new Integer[0]);
+        Integer Arr [] = numbers.toArray(new Integer[0]);// arraylist to array!
         System.out.println();
         
 
