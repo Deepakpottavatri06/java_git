@@ -15,7 +15,7 @@ class classNF {
     
 }
 
-public class fundamentals {
+public class fundamentals1 {
     /*
         All exception and error types are subclasses of the class Throwable,
         which is the base class of the hierarchy.
@@ -28,11 +28,21 @@ public class fundamentals {
      */
     /*
      !Built in Exception Handling:
-     * Checked Exceptions: These are compile-time exceptions that must be either caught or declared in the method signature using throws.
+     * Checked Exceptions: These are compile-time exceptions that must be either caught or declared in the method signature using 'throws'.
        Examples : IOException, SQLException, etc.
+           IOException
+        Thrown when an I/O operation fails or is interrupted.
+    SQLException
+        Thrown when there is an error with database access.
+    FileNotFoundException
+        Thrown when an attempt to open the file denoted by a specified pathname has failed.
+    ClassNotFoundException
+        Thrown when an application tries to load a class through its string name but no definition for the class with the specified name could be found.
      * Unchecked Exceptions: These are exceptions that do not need to be declared or caught.
       They are subclasses of RuntimeException, such as NullPointerException, ArrayIndexOutOfBoundsException, etc.
      */
+
+    // ! Checked Exceptions :
     // IO Exception and FileNotFoundException
     public static void main(String[] args) {
         try {
@@ -45,7 +55,7 @@ public class fundamentals {
 
         // classNotfound error
         try {
-            Class<?> c = Class.forName("classNF");
+            Class<?> c = Class.forName("classNF"); // it tries to load the class if exists.
             Field f = c.getField("myvariable");
             System.err.println(f.get(null));
         } catch (ClassNotFoundException | IllegalAccessException | NoSuchFieldException e) {
