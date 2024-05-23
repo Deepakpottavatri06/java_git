@@ -35,6 +35,7 @@
         2)By implementing the Runnable interface.
      */
 class randomThread extends Thread{
+    @Override
     public void run(){
         System.err.println("Thread is running :"+ Thread.currentThread().getName());
     }
