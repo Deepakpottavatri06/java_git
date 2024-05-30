@@ -37,6 +37,7 @@ public class linkedL {
         a.add(1);
         a.add(3);
         a.add(23); 
+        
 
         for (Integer integer : a) {
             System.err.print(integer + "->");

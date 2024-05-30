@@ -26,6 +26,7 @@ public class arrays1{
         System.out.println(car.indexOf("random2"));//get index of element
         car.remove("random3");//remove element
         
+        
         //Sorting and Searching
         System.out.println(car.contains("random1"));//check if element is present
         ArrayList<Integer> numbers = new ArrayList<>(Arrays.asList(5,6,1,2,3,4,7,8,9,10));
